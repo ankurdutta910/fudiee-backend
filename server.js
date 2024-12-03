@@ -20,7 +20,7 @@ app.get("/api/distance", async (req, res) => {
       origins,
       destinations,
       units: "metric",
-      key: process.env.GOOGLE_API_KEY,
+      key: "AIzaSyA-URAEuuH3T3CXisPpNT9csF1e-ZgOUKY",
     };
 
     // Make the API request to Google Maps
@@ -36,5 +36,5 @@ app.get("/api/distance", async (req, res) => {
 
 // Start the server
 app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
+  console.log(`port: ${PORT}`);
 });
